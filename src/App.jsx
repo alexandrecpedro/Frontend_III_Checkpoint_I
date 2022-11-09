@@ -21,7 +21,7 @@ function App() {
       picture: playerPhoto
     }
 
-    if ((playerName.trim().length < 3) || (position.trim().length < 6) || (!/[0-9]/.test(playerPhoto))) {
+    if ((playerName.trim().length < 3) || (position.trim().length < 6) || (!/[0-9]/.test(playerPhoto)) || (playerPhoto.trim().length < 9)) {
       setFormsError(true)
     } else {
       setFormsError(false)
